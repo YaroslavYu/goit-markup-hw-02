@@ -6,15 +6,20 @@
 /* hero and footer background color #2F303A */
 
 :root {
+    --buttons-portfolio-background-team-color: #F5F4FA;
+    --buttons-footerstudio-backgroundheader-portfolio-buttons-hovered: #ffffff;
     --accent-color: #2196F3;
     --headers-nav-color: #212121;
     --primary-tex-color: #757575;
-    --buttons-footerstudio-color: #ffffff;
+    --buttons-footerstudio-color: var(--buttons-footerstudio-backgroundheader-portfolio-buttons-hovered);
+    --buttons-porfolio-hovered-text-color: var(--buttons-footerstudio-backgroundheader-portfolio-buttons-hovered);
     --header-studio-color: #000000;
     --color-footer-link: rgba(255, 255, 255, 0.6);
     --main-backround-color: #F5F5F5;
     --hero-footer-background-color: #2F303A;
-    --backgroud-color-team: #F5F4FA;
+    --backgroud-color-team: var(--buttons-portfolio-background-team-color);
+    --buttons-portfolio-backgroung-color: var(--buttons-portfolio-background-team-color);
+
 }
 
 /* задаєм шрифт, фон та колір шрифта основної частини */
@@ -85,12 +90,20 @@ ul {
 }
 
 h1,
-.buttons {
+.buttons,
+.buttons-portfolio:hover,
+.buttons-portfolio:focus {
     color: var(--buttons-footerstudio-color);
 }
 
-.buttons {
+.buttons,
+.buttons-portfolio:hover,
+.buttons-portfolio:focus {
     background-color: var(--accent-color);
+}
+
+.buttons-portfolio {
+    background-color: var(--buttons-portfolio-backgroung-color);
 }
 
 .headers {
