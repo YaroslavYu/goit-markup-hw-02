@@ -1,0 +1,108 @@
+/* accent color #2196F3 */
+/* headers and nav color #212121 */
+/* secondary text color #757575 */
+/* color-footer-link rgba(255, 255, 255, 0.6) */
+/* main bacground color #F5F5F5; */
+/* hero and footer background color #2F303A */
+
+:root {
+    --accent-color: #2196F3;
+    --headers-nav-color: #212121;
+    --primary-tex-color: #757575;
+    --buttons-footerstudio-color: #ffffff;
+    --header-studio-color: #000000;
+    --color-footer-link: rgba(255, 255, 255, 0.6);
+    --main-backround-color: #F5F5F5;
+    --hero-footer-background-color: #2F303A;
+    --backgroud-color-team: #F5F4FA;
+}
+
+/* задаєм шрифт, фон та колір шрифта основної частини */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-backround-color);
+    color: var(--primary-tex-color);
+}
+
+/* обнуляєм стиль списків */
+ul {
+    list-style: none;
+}
+
+/* прибираємо підклеслення у всіх посилань */
+.links,
+.logo,
+.footer-links {
+    text-decoration: none;
+
+}
+
+.header {
+    background-color: var(--buttons-footerstudio-color);
+}
+
+/* загальний колір верхнього логотипу */
+.logo {
+    color: var(--header-studio-color);
+}
+
+/* привласнюєм колір з прозорістю всім посиланням футера */
+.footer-links {
+    color: var(--color-footer-link);
+}
+
+/* перевизначаєм коліру посилань футері для лого і адреси*/
+.address,
+.logo-footer {
+    color: var(--buttons-footerstudio-color)
+}
+
+/* розфарбовуєм ВЕБ логотипу у акцентний колір */
+.logo-web {
+    color: var(--accent-color);
+}
+
+/* колір посилань навігації */
+.nav-list-item>.links {
+    color: var(--headers-nav-color);
+}
+
+/* перемальовуєм колір адреси і телефону у хедері*/
+.header-address {
+    color: var(--secondary-tex-color)
+}
+
+/* колір ховеру для необхідних посилань */
+.hovered:hover,
+.hovered:focus {
+    color: var(--accent-color);
+}
+
+.hero {
+    text-align: center;
+    background-color: var(--hero-footer-background-color);
+}
+
+h1,
+.buttons {
+    color: var(--buttons-footerstudio-color);
+}
+
+.buttons {
+    background-color: var(--accent-color);
+}
+
+.headers {
+    color: var(--headers-nav-color);
+}
+
+
+
+.our-team {
+    background-color: var(--backgroud-color-team);
+}
+
+.footer {
+    background-color: var(--hero-footer-background-color);
+}
