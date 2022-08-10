@@ -24,10 +24,10 @@
 
 /* задаєм шрифт, фон та колір шрифта основної частини */
 body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Verdana', 'Tahoma' sans-serif;
     background-color: var(--main-backround-color);
     color: var(--primary-tex-color);
+    letter-spacing: 0.03em;
 }
 
 /* обнуляєм стиль списків */
@@ -40,7 +40,14 @@ ul {
 .logo,
 .footer-links {
     text-decoration: none;
+}
 
+.logo,
+.logo-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .header {
@@ -68,9 +75,13 @@ ul {
     color: var(--accent-color);
 }
 
-/* колір посилань навігації */
+/* колір та шрифт посилань навігації */
 .nav-list-item>.links {
     color: var(--headers-nav-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 /* перемальовуєм колір адреси і телефону у хедері*/
@@ -89,11 +100,52 @@ ul {
     background-color: var(--hero-footer-background-color);
 }
 
-h1,
+.buttons {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+
+.main-header,
 .buttons,
 .buttons-portfolio:hover,
 .buttons-portfolio:focus {
     color: var(--buttons-footerstudio-color);
+}
+
+.main-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.benefits p {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.what-we-do>.headers,
+.our-team>.headers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+}
+
+.our-team h3 {
+    font-weight: 500;
+}
+
+.our-team p,
+.our-team h3 {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 .buttons,
@@ -110,7 +162,12 @@ h1,
     color: var(--headers-nav-color);
 }
 
-
+.benefits h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
 
 .our-team {
     background-color: var(--backgroud-color-team);
@@ -118,4 +175,29 @@ h1,
 
 .footer {
     background-color: var(--hero-footer-background-color);
+}
+
+.address-footer a {
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+
+.buttons-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.example h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.example p {
+    font-size: 16px;
+    line-height: 1.88;
 }
