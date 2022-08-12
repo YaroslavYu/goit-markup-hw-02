@@ -6,200 +6,191 @@
 /* hero and footer background color #2F303A */
 
 :root {
-    --buttons-portfolio-background-team-color: #F5F4FA;
-    --buttons-footerstudio-backgroundheader-portfolio-buttons-hovered: #ffffff;
     --accent-color: #2196F3;
-    --headers-nav-color: #212121;
-    --primary-tex-color: #757575;
-    --buttons-footerstudio-color: var(--buttons-footerstudio-backgroundheader-portfolio-buttons-hovered);
-    --buttons-porfolio-hovered-text-color: var(--buttons-footerstudio-backgroundheader-portfolio-buttons-hovered);
-    --header-studio-color: #000000;
-    --color-footer-link: rgba(255, 255, 255, 0.6);
+    --header-logo-color: #000000;
+    --footer-logo-hero-mainbackgr-color: #ffffff;
     --main-backround-color: #F5F5F5;
     --hero-footer-background-color: #2F303A;
-    --backgroud-color-team: var(--buttons-portfolio-background-team-color);
-    --buttons-portfolio-backgroung-color: var(--buttons-portfolio-background-team-color);
-
+    --headers-nav-text-color: #212121;
+    --buttons-portfolio-background-team-color: #F5F4FA;
+    --color-footer-contacts: rgba(255, 255, 255, 0.6);
+    --primary-tex-color: #757575;
 }
 
 /* задаєм шрифт, фон та колір шрифта основної частини */
 body {
-    font-family: 'Roboto', 'Verdana', 'Tahoma' sans-serif;
-    background-color: var(--main-backround-color);
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-tex-color);
     letter-spacing: 0.03em;
 }
 
-/* обнуляєм стиль списків */
-ul {
-    list-style: none;
-}
 
-/* прибираємо підклеслення у всіх посилань */
-.links,
-.logo,
-.footer-links {
+.links {
     text-decoration: none;
 }
 
-.logo,
+.page-header,
+.sect-benefits,
+.sect-what-we-do {
+    background-color: var(--footer-logo-hero-mainbackgr-color);
+}
+
+.logo-header,
 .logo-footer {
-    font-family: 'Raleway';
+    font-family: 'raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.11;
 }
 
-.header {
-    background-color: var(--buttons-footerstudio-color);
+.logo-header {
+    color: var(--header-logo-color);
 }
 
-/* загальний колір верхнього логотипу */
-.logo {
-    color: var(--header-studio-color);
-}
-
-/* привласнюєм колір з прозорістю всім посиланням футера */
-.footer-links {
-    color: var(--color-footer-link);
-}
-
-/* перевизначаєм коліру посилань футері для лого і адреси*/
-.address,
 .logo-footer {
-    color: var(--buttons-footerstudio-color)
+    color: var(--footer-logo-hero-mainbackgr-color);
 }
 
-/* розфарбовуєм ВЕБ логотипу у акцентний колір */
-.logo-web {
+.first-part-logo {
     color: var(--accent-color);
 }
 
-/* колір та шрифт посилань навігації */
-.nav-list-item>.links {
-    color: var(--headers-nav-color);
+.list {
+    list-style: none;
+}
+
+.nav-items .links {
+    color: var(--headers-nav-text-color)
+}
+
+.contacts-items .links {
+    color: inherit;
+}
+
+.hovered:hover,
+.hovered:focus,
+.links.current-page {
+    color: var(--accent-color);
+}
+
+.nav-items,
+.contacts-items {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
     letter-spacing: 0.02em;
 }
 
-/* перемальовуєм колір адреси і телефону у хедері*/
-.header-address {
-    color: var(--secondary-tex-color)
-}
-
-/* колір ховеру для необхідних посилань */
-.hovered:hover,
-.hovered:focus {
-    color: var(--accent-color);
+.hero,
+.page-footer {
+    background-color: var(--hero-footer-background-color);
 }
 
 .hero {
     text-align: center;
-    background-color: var(--hero-footer-background-color);
-}
-
-.buttons {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
     letter-spacing: 0.06em;
-    cursor: pointer;
 }
 
-.main-header,
-.buttons,
-.buttons-portfolio:hover,
-.buttons-portfolio:focus {
-    color: var(--buttons-footerstudio-color);
-}
-
-.main-header {
+.hero-header {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--footer-logo-hero-mainbackgr-color);
 }
 
-.benefits p {
-    font-size: 14px;
-    line-height: 1.71;
-}
-
-.what-we-do>.headers,
-.our-team>.headers {
+.hero-button {
+    letter-spacing: inherit;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-
-}
-
-.our-team h3 {
-    font-weight: 500;
-}
-
-.our-team p,
-.our-team h3 {
     font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-}
-
-.buttons,
-.buttons-portfolio:hover,
-.buttons-portfolio:focus {
-    background-color: var(--accent-color);
-}
-
-.buttons-portfolio {
-    background-color: var(--buttons-portfolio-backgroung-color);
+    line-height: 1.88;
     cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--footer-logo-hero-mainbackgr-color);
 }
 
-.headers {
-    color: var(--headers-nav-color);
+.headers-benefits,
+.main-headers,
+.team-names,
+.sorting-item-name {
+    color: var(--headers-nav-text-color);
 }
 
-.benefits h3 {
-    font-weight: 700;
+.headers-benefits {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.our-team {
-    background-color: var(--backgroud-color-team);
-}
-
-.footer {
-    background-color: var(--hero-footer-background-color);
-}
-
-.address-footer a {
+.benefits-descr {
     font-size: 14px;
     line-height: 1.71;
+}
 
+.main-headers {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team,
+.buttons-portfolio {
+    background-color: var(--buttons-portfolio-background-team-color)
+}
+
+.team-item {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    background-color: var(--footer-logo-hero-mainbackgr-color)
+}
+
+.team-names {
+    font-weight: 500;
+}
+
+.address,
+.footer-contacts {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address {
+    color: var(--footer-logo-hero-mainbackgr-color);
+}
+
+.footer-contacts {
+    color: var(--color-footer-contacts);
 }
 
 .buttons-portfolio {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    cursor: pointer;
 }
 
-.example h2 {
-    font-weight: 700;
+.buttons-portfolio:hover,
+.buttons-portfolio:focus,
+.current-button {
+    color: var(--footer-logo-hero-mainbackgr-color);
+    background-color: var(--accent-color);
+}
+
+.sorting-item {
+    background-color: ;
+}
+
+.sorting-item-name {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.example p {
+.sorting-item-descr {
     font-size: 16px;
     line-height: 1.88;
 }
