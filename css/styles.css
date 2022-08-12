@@ -15,6 +15,7 @@
     --buttons-portfolio-background-team-color: #F5F4FA;
     --color-footer-contacts: rgba(255, 255, 255, 0.6);
     --primary-tex-color: #757575;
+    --hero-button-activate: #188CE8;
 }
 
 /* задаєм шрифт, фон та колір шрифта основної частини */
@@ -107,6 +108,11 @@ body {
     cursor: pointer;
     background-color: var(--accent-color);
     color: var(--footer-logo-hero-mainbackgr-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-button-activate);
 }
 
 .headers-benefits,
